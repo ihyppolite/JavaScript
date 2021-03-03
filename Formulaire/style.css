@@ -1,0 +1,51 @@
+table{
+    
+}
+
+thead{
+    border-bottom:3px solid #999;
+}
+
+
+th ,td{
+    border:1px solid #ddd;
+    padding:1em;
+}
+
+tfoot{
+    border-top:3px solid #999;
+    text-align:right;
+}
+
+
+tbody tr:nth-child(even)
+
+{
+    background: #EEE;
+    
+}
+
+tbody tr:nth-child(odd) 
+{
+    background: #FFF;
+    
+}
+
+
+label
+{
+    font-family: arial ;
+    font-size:20px;
+    margin:1em;
+    
+}
+
+h2
+{
+    font-size:4em;
+    background: #4682B4;
+    color:#C8C8C8;
+    padding-left:7em;
+    padding:auto;
+
+}

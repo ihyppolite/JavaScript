@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>ListRendering</title>
+     <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script type="module" src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    </head>
+    <body>
+        
+        <h2>Nouveau contact</h3>
+        <div id="app">
+        <Form-v v-bind:contacts="contacts" v-on:save="saveContacts"></Form-v>
+        
+        <Show-contact v-bind:contacts="contacts" v-on:save="saveContacts" ></Show-contact>
+           
+        </div>
+        
+       
+    </body>
+</html>
