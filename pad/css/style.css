@@ -1,0 +1,70 @@
+html, body {
+	height: 100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background: #333;
+    display:flex;
+    align-items: center;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+audio {
+	display: none;
+}
+
+.container {
+    width:50%;
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:center;
+} 
+
+.container a {
+    display:inline-block;
+    position:relative;
+    width: 24%;
+    margin: 1rem;
+    background: radial-gradient(ellipse at center, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+    box-shadow: 1px 1px 14px #111;
+    border-radius: 4px;
+}
+
+.container a::before {
+    display: block;
+    content: '';
+    /*width: 80%;*/ /* on va prendre 100% de la largeur fixée par l'élément parent (.container a) */
+    padding-top: 100%; /* espacement vertical de 100% */
+}
+
+/*.container a span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+    justify-content:center;
+}*/
+
+.container a:hover,
+.container a.active {
+    background: radial-gradient(ellipse at center, rgba(255,175,75,1) 0%, rgba(255,255,255,1) 100%);
+	animation: neon 0.4s ease-in-out;
+}
+
+@keyframes neon {
+   from {
+     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffaf4b, 0 0 70px #ffaf4b, 0 0 80px #ffaf4b, 0 0 100px #ffaf4b, 0 0 150px #ffaf4b;
+   }
+   to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffaf4b, 0 0 35px #ffaf4b, 0 0 40px #ffaf4b, 0 0 50px #ffaf4b, 0 0 75px #ffaf4b;
+	}
+    
+}
